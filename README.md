@@ -1,9 +1,9 @@
-# 🌟 Metastatic Cancer Diagnosis Prediction
+# Metastatic Cancer Diagnosis Prediction
 
 Predicting durations for metastatic cancer diagnosis to uncover patterns in healthcare equity.
 
 
-## 🧭 Overview
+## Overview
 
 This project was developed for the 2024 WiDS Datathon (Challenge 2) sponsored by Gilead Sciences, using a large-scale dataset enriched with demographic, socioeconomic, and climate data.
 
@@ -11,7 +11,7 @@ The goal is to predict how long it takes for a patient to receive a metastatic c
 
 Metastatic TNBC is highly aggressive, and early diagnosis is essential. A model that highlights disparities in diagnosis wait time can support targeted interventions and more equitable patient outcomes.
 
-## 🚀 Key Highlights
+## Key Highlights
 
 - Random Forest model achieved an R² score of 0.73 with an MSE of 0.12.
 
@@ -21,7 +21,7 @@ Metastatic TNBC is highly aggressive, and early diagnosis is essential. A model 
 
 - Full ML pipeline: EDA → preprocessing → feature engineering → selection → modeling → evaluation.
 
-## 🗂️ Repository Structure
+## Repository Structure
 ```
 Metastatic-Cancer-Prediction/
 ├── Data/                    
@@ -50,7 +50,7 @@ Metastatic-Cancer-Prediction/
 └── README.md
 ```
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 1. Clone the Repository
 ```
 git clone https://github.com/Anni-Bamwenda/Metastatic-Cancer-Prediction.git
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 jupyter notebook notebooks/anni-widsdatathon02.ipynb
 ```
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 The dataset provided by HealthVerity + climate enrichment includes:
 
@@ -80,7 +80,7 @@ The dataset provided by HealthVerity + climate enrichment includes:
 
 - ZIP-level temperature patterns
 
-## 📊 Visualizations
+## Visualizations
 
 ### Diagnosis Counts by Race
 ![Images/No. of patients by race img.png](https://github.com/Anni-Bamwenda/WidsDatathon/blob/main/Images/No.%20of%20patients%20by%20race%20img.png)
@@ -96,7 +96,7 @@ The dataset provided by HealthVerity + climate enrichment includes:
 ![Images/Types of payment by patient race img.png](https://github.com/Anni-Bamwenda/WidsDatathon/blob/main/Images/Types%20of%20payment%20by%20patient%20race%20img.png)
 --->
 
-## 🛠️ Data Preprocessing
+## Data Preprocessing
 
 Key preprocessing steps:
 
@@ -112,13 +112,13 @@ Key preprocessing steps:
 
 - Created age group bins for improved interpretability.
 
-## 🧬 Feature Selection (Lasso Regression)
+## Feature Selection (Lasso Regression)
 
 Lasso (L1 regularization) was used to identify the top 20 predictive features, with hyperparameters tuned via GridSearchCV.
 
 ### Top 20 Feature Coefficients
 
-![Images/Top 20 Features by coeff. value img.png](https://github.com/Anni-Bamwenda/WidsDatathon/blob/main/Images/Top%2020%20Features%20by%20coeff.%20value%20img.png)
+![Images/Top 20 Features by coeff. value img.png](results/feature_importance.png)
 
 Feature selection improved:
 
@@ -130,7 +130,7 @@ Feature selection improved:
   
 - Dimensionality Reduction
 
-## 🌲 Modeling
+## Modeling
 
 Two models were compared:
 
@@ -141,7 +141,7 @@ Two models were compared:
 
 The Random Forest captured nonlinear relationships and outperformed the linear model.
 
-## 📈 Predictions
+## Predictions
 
 A distribution of predicted diagnosis durations shows clustering in the 0 –100 day range, highlighting regions with potentially acceptable care and others that need improvement.
 
@@ -151,9 +151,9 @@ A distribution of predicted diagnosis durations shows clustering in the 0 –100
 
 ### Predictions Histogram
 
-![Images/Predictions histogram img.png](https://github.com/Anni-Bamwenda/WidsDatathon/blob/main/Images/Predictions%20histogram%20img.png)
+![Images/Predictions histogram img.png](results/predictions_hist.png)
 
-## 📝 Notes
+## Notes
 
 Potential improvements for future iterations:
 
@@ -167,7 +167,7 @@ Potential improvements for future iterations:
 
 - Add pytest unit tests for feature preparation and model pipeline
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Python 3.10+
 
@@ -179,11 +179,9 @@ Potential improvements for future iterations:
 
 - Developed in Kaggle Notebooks
 
-## 👩🏽‍💻 Author
+## Author
 
 Anni Bamwenda
-Software Engineer II • Data Scientist • AI/ML Engineer
+Software Engineer II • AI/ML Engineer
 
-🔗 LinkedIn https://www.linkedin.com/in/annibamwenda/
-
-🔗 GitHub: https://github.com/Anni-Bamwenda
+🔗[LinkedIn](https://www.linkedin.com/in/annibamwenda/)     👩🏾‍💻[GitHub](https://github.com/Anni-Bamwenda)
